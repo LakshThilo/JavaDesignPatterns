@@ -1,4 +1,4 @@
-# JavaDesignPatterns
+# Java Design Patterns
 What’s a design pattern?
 
 Design Patterns are very popular among software developers. A design pattern is a well-described solution to a common software problem.
