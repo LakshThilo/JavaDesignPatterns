@@ -1,4 +1,4 @@
-package lak.designPatterns.behavioral.commandPattern.viewingDocumentEmpl;
+package lak.designPatterns.behavioral.commandPattern.viewingDocumentEmpl.after;
 
 public class  PrintCommand implements Command {
 

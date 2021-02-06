@@ -1,4 +1,4 @@
-package lak.designPatterns.behavioral.commandPattern.viewingDocumentEmpl;
+package lak.designPatterns.behavioral.commandPattern.viewingDocumentEmpl.after;
 
 /**  encapsulate those pieces of functionality of document class inside saveCommand class */
 public class SaveCommand implements Command {
