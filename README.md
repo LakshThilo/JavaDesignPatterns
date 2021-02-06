@@ -19,3 +19,5 @@ Most patterns are described very formally so somebody can reproduce them in many
     - Structure of classes shows each part of the pattern and how they are related.
     - Code examples: in one each design pattern consists of two examples, and some of the examples contain two packages before and after packages. 
       Before-package shows the code before applying the design pattern, and After-package shows how the code looks after applying the design pattern.
+      
+You can simply download and practice the code.
