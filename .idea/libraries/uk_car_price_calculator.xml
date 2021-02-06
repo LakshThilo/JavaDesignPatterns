@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uk-car-price-calculator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lak/designPatterns/structural/adpterPattern/car_price_calculator_Exmpl/before/lib/uk-car-price-calculator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
