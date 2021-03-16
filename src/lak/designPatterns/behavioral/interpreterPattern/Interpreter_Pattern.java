@@ -1,6 +1,6 @@
 package lak.designPatterns.behavioral.interpreterPattern;
 
-public class Note {
+public class Interpreter_Pattern {
 
     /*
     * Imagine a scenario, where two people are trying to communicate but they don't speak the same language.

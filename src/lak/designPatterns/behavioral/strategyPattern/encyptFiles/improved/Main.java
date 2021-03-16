@@ -1,4 +1,4 @@
-package lak.designPatterns.behavioral.strategyPattern.encyptFiles.before;
+package lak.designPatterns.behavioral.strategyPattern.encyptFiles.improved;
 
 
 /*  In this example, I'm going to create an application that can encrypt files in different ways using the strategy pattern.
@@ -15,9 +15,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        File file = new File("text.txt");
-        file.applyAESEncryption();
-
-        file.applyRSAEncryption();
+        File file = new File("test.pdf");
+        AESEncryptor aesEncryptor = new AESEncryptor();
+        file.encrypt(aesEncryptor);
     }
 }

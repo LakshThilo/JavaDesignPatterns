@@ -3,5 +3,5 @@ package lak.designPatterns.behavioral.visitorPattern.adjectingEmployeeSalaryEmpl
 public interface Employee {
 
     int getSalary();
-    void accept(Visitor visitor);
+
 }

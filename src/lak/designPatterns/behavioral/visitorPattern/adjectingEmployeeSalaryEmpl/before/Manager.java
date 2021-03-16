@@ -14,8 +14,4 @@ public class Manager implements Employee{
         return salary;
     }
 
-    @Override
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
 }

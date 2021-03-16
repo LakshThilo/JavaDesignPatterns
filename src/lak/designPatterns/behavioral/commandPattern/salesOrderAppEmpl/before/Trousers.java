@@ -1,5 +1,6 @@
 package lak.designPatterns.behavioral.commandPattern.salesOrderAppEmpl.before;
 
+// mare class
 public class Trousers {
 
     public String placeOrder(){

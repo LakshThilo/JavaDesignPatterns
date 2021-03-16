@@ -3,15 +3,20 @@ package lak.designPatterns.behavioral.strategyPattern.encyptFiles.before;
 //Context
 public class File {
 
-    private String fileName;
+    private String fileType;
 
-    public File(String fileName){
-       this.fileName = fileName;
+    public File(String file){
+
+        fileType = file;
     }
 
-    // going to pass an encryptor object into this method,  I'll be able to pass in any implementation of my encryptor interface
-    public void encrypt(Encryptor encryptor){
-        System.out.println(encryptor.encryptFile() + " to "+ fileName);
+    public void applyRSAEncryption(){
 
+        System.out.println("Applying RSA encryption for given "+fileType +" file");
+    }
+
+    public void applyAESEncryption(){
+
+        System.out.println("Applying AES encryption for given "+fileType + " file");
     }
 }

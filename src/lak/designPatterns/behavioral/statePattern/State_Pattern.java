@@ -1,12 +1,11 @@
 package lak.designPatterns.behavioral.statePattern;
 
-public class Note {
+public class State_Pattern {
 
-    /*
-      Sometimes you will have an object that needs to behave differently depending on its internal states. The state
-      pattern allows the object to alter its behavior when its state changes.
+/**   Sometimes you will have an object that needs to behave differently depending on its internal states.
+      The state pattern allows the object to alter its behavior when its state changes.*/
 
-      Imagine a play or pause button on a media player. If someone clicks the play button, what happens will depend
+/*    Imagine a play or pause button on a media player. If someone clicks the play button, what happens will depend
       on the state of the media player. For example, it could be already playing, or paused, or rewinding, and so on.
       If you write a media play in Java, you might end up with loads of if statements about the state of the player.
 

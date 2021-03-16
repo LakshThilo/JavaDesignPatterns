@@ -1,6 +1,6 @@
 package lak.designPatterns.behavioral.mediatorPattern;
 
-public class Note {
+public class Mediator_Pattern {
 
 
 /*  The actual definition of a mediator is someone who tries to make people in conflict, come to an agreement.

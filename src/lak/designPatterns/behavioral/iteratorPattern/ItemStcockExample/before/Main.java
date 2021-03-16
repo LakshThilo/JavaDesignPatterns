@@ -2,7 +2,8 @@ package lak.designPatterns.behavioral.iteratorPattern.ItemStcockExample.before;
 
 import java.util.ArrayList;
 
-/* In this example, I have an app that keeps track of stock for a store that sells stationary. I want to be able to iterate over the items and print out just the ones that are in stock.*/
+/* In this example, I have an app that keeps track of stock for a store that sells stationary. I want to be able to
+iterate over the items and print out just the ones that are in stock.*/
 
 public class Main {
 

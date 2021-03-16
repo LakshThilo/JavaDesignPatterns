@@ -1,6 +1,6 @@
 package lak.designPatterns.behavioral.iteratorPattern;
 
-public class Note {
+public class Iterator_Pattern {
 
     /*
         If you've ever used Collections, which you probably have, it's likely you've used the Iterator Pattern extensively.

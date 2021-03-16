@@ -1,6 +1,6 @@
 package lak.designPatterns.behavioral.chainOfResponsibilityPattern;
 
-public class Notes {
+public class ChainOfResponsibility_Pattern {
 
 
     /* If we have situation where you have some code that need to make a request, but you don't know until run time,

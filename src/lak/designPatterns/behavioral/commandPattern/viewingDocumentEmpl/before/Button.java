@@ -10,12 +10,10 @@ public class Button {
     String text;
 
     // And in the constructor, you have to pass in that text.
-    public Button(String text) {
-        this.text = text;
-    }
 
-    public void click() {
+    public void click(String text) {
 
+        System.out.println(text);
 
     }
 }

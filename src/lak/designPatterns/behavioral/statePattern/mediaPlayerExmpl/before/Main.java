@@ -2,6 +2,9 @@ package lak.designPatterns.behavioral.statePattern.mediaPlayerExmpl.before;
 
 public class Main {
 
+    /*In this example, I have a media player application that I'm going to refactor to use the state pattern
+    to simplify it. So let's have a look at the code*/
+
     /*This is quite a messy solution. If I was to add more states such as a rewind or fast forward,
     I would have to add to each switch statements and make it longer. And I'd have to add a new method
     for each where I would have to have more switch statements similar to the ones I already have.

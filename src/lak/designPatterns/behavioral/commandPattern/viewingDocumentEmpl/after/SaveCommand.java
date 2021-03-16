@@ -8,6 +8,7 @@ public class SaveCommand implements Command {
     public SaveCommand(Document document){
         this.document = document;
     }
+
     @Override
     public void execute() {
 

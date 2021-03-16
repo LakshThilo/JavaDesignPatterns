@@ -1,4 +1,4 @@
-package lak.designPatterns.behavioral.strategyPattern.encyptFiles.before;
+package lak.designPatterns.behavioral.strategyPattern.encyptFiles.improved;
 
 /*  So let's see what this would look like. The structure of the strategy pattern is fairly straightforward.
     You would have the context, which maintains a reference to the strategy objects. The strategy is usually

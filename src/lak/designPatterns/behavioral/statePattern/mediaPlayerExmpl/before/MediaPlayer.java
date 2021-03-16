@@ -20,6 +20,7 @@ public class MediaPlayer {
     public void setIcon(String icon) {
         this.icon = icon;
     }
+
     /*the play method I have a switch statement. If the state is paused, then I set it to playing and I set the
     icon to a pause button. Then I print out a message to the console saying that the video is playing and the icon
     is set to paused. If it's set to playing already then I don't need to do anything. So I just have a break in that case.*/

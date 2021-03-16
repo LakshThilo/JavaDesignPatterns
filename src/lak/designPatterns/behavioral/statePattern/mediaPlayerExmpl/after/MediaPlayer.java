@@ -27,6 +27,7 @@ public class MediaPlayer {
     }
 
     public void pause() {
+
         state.pause(this);
     }
 

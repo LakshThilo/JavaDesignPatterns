@@ -25,14 +25,15 @@ import lak.designPatterns.behavioral.commandPattern.viewingDocumentEmpl.after.Sa
 // class called GUI, which represents the user interface toolkits.
 public class GUI {
 
-    private static Document document = new Document();
-
     public static void main(String[] args) {
 
-        Button saveButton = new Button("Save");
-        Button printButton = new Button("Print");
+        Document document = new Document();
 
-        saveButton.click();
-        printButton.click();
+        Button saveButton = new Button();
+        Button printButton = new Button();
+
+        saveButton.click(document.save());
+        printButton.click(document.print());
+
     }
 }

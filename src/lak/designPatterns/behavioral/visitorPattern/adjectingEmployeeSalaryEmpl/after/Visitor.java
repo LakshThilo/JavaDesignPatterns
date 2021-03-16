@@ -1,4 +1,4 @@
-package lak.designPatterns.behavioral.visitorPattern.adjectingEmployeeSalaryEmpl.before;
+package lak.designPatterns.behavioral.visitorPattern.adjectingEmployeeSalaryEmpl.after;
 
 public interface Visitor {
 

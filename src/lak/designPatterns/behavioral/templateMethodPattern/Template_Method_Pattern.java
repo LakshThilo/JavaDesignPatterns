@@ -1,9 +1,10 @@
 package lak.designPatterns.behavioral.templateMethodPattern;
 
-public class Note {
+public class Template_Method_Pattern {
 
-    /*  The template method pattern is all about defining the common steps in an algorithm and a superclass and redefining some of those steps in a subclass.
-        This is actually one of the most commonly used design patterns.
+/**    The template method pattern is all about defining the common steps in an algorithm and a superclass and redefining some of those steps in a subclass.*/
+
+/*     This is actually one of the most commonly used design patterns.
         As a real life example, imagine there's a recipe for making lasagna. The recipe defines a set of steps which you follow to cook the lasagna,
         but there might be alternative versions with different fillings.
 

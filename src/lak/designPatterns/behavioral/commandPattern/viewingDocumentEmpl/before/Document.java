@@ -4,14 +4,14 @@ package lak.designPatterns.behavioral.commandPattern.viewingDocumentEmpl.before;
 // the document class, which is the receiver. So this contains the actual functionality
 public class Document {
 
-    public void save(){
+    public String save(){
 
-        System.out.println("Saving the document...");
+        return "Saving the document...";
     }
 
-    public void print(){
+    public String print(){
 
-        System.out.println("Printing the document...");
+        return "Printing the document...";
     }
 
 }

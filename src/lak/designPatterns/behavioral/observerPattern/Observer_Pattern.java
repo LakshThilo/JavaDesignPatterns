@@ -1,9 +1,9 @@
 package lak.designPatterns.behavioral.observerPattern;
 
-public class Note {
+public class Observer_Pattern {
 
+    /**  As the name of this pattern suggests, the observer pattern is all about objects watching  or observing other objects.*/
     /*
-      As the name of this pattern suggests, the observer pattern is all about objects watching  or observing other objects.
       In object-oriented design, you often end up with a system broken up into lots of classes that work together.
       One of those challenges is making those classes interact and cooperate while avoiding tight coupling between them.
       The observer pattern provides a way to do this. You have an object that's being watched called the subject

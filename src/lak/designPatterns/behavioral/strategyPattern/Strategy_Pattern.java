@@ -1,9 +1,10 @@
 package lak.designPatterns.behavioral.strategyPattern;
 
-public class Note {
+public class  Strategy_Pattern {
 
-    /* Say you have a group of algorithms and you want to choose which one to use dynamically at runtime.
-    In the strategy pattern, the word strategy usually refers to an algorithm, and it allows you to do just this,
+/** Say you have a group of algorithms and you want to choose which one to use dynamically at runtime. */
+
+/*  In the strategy pattern, the word strategy usually refers to an algorithm, and it allows you to do just this,
     to define a family of algorithms and make them interchangeable.*/
 
     /* As a real life example, say you have a video game, and the person you're controlling has different powers they can use.

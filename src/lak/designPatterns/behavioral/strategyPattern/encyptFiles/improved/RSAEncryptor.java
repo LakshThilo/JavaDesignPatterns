@@ -1,4 +1,4 @@
-package lak.designPatterns.behavioral.strategyPattern.encyptFiles.before;
+package lak.designPatterns.behavioral.strategyPattern.encyptFiles.improved;
 
 //Strategy 2
 public class RSAEncryptor implements Encryptor {

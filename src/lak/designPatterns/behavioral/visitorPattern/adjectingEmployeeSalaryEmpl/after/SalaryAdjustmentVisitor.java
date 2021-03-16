@@ -1,6 +1,6 @@
-package lak.designPatterns.behavioral.visitorPattern.adjectingEmployeeSalaryEmpl.before;
+package lak.designPatterns.behavioral.visitorPattern.adjectingEmployeeSalaryEmpl.after;
 
-public class SalaryAdjustmentVisitor implements Visitor{
+public class SalaryAdjustmentVisitor implements Visitor {
 
 
     @Override

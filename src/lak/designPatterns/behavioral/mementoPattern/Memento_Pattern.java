@@ -25,5 +25,5 @@ package lak.designPatterns.behavioral.mementoPattern;
      using the memento pattern can result in an increase in memory usage. And this might outweigh the benefits of using it.
      But if the object state is fairly simple and you want to wait to be able to save it and restore it later,
      the momento pattern is a good way to do this without exposing the structure of the objects.*/
-public class Note {
+public class Memento_Pattern {
 }
