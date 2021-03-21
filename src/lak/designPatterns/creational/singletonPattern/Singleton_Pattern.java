@@ -1,6 +1,6 @@
 package lak.designPatterns.creational.singletonPattern;
 
-public class Note {
+public class Singleton_Pattern {
 
     /*
         The Singleton pattern should be used when you want to make sure that only one instance of a class can be created.

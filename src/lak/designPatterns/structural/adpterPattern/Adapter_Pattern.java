@@ -2,27 +2,33 @@ package lak.designPatterns.structural.adpterPattern;
 
 public class Adapter_Pattern {
 
-        /*  Suppose you have hundreds of small objects in your application that use uploads of memory.
-    The Flyweight Pattern uses sharing to make apps like these work more efficiently.
-    Imagine a program that's used for creating and editing text documents. A user opens a document and starts typing on it.
-    In an object-oriented design, you could have a new objects for each character. So every time they typed an A, you would
-    create a new A object. That would be a lot of objects. If they opened up a document that was hundreds of pages long,
-    there might be a million separate letter objects.
+    /*
+    What if you want to use a class that belongs to a third party app, but it doesn't fit with your app because of incompatible interfaces.
+    The adapter pattern provides a way for classes to work together that normally wouldn't be able to.
 
-    This situation might lead to the dreaded java.lang.OutOfMemory error. That's all Java developers are familiar with.
-    Also in Java, it doesn't take long to create objects. In fact, it's actually pretty quick, but there is definitely an
-    opportunity here to maximize performance.
+    So imagine you have a plug, that you can use to plug in different USB cables. So you can use the plug to charge a range of different
+    devices like your phone, and your tablets, and your fitness watch. But when you go abroad, the plug doesn't fit in the socket and you
+    can't use it to charge anything. So instead you can use a plug adapter and the adapter allows you to charge all of your devices abroad.
 
-    This is where the Flyweight Pattern can help. Instead of having a separate object for A, B, C, D, E, and so on, you
-    could have one share object for all the A's and one for all the B's, and so on. This is okay because all A's look the same.
-    They have the same character code and shape and so on, but they won't all have the same position on the documents.
-    That will be different for each one.
+    If this real world example was written in Java code,
+        -the charge would be an interface.
+        - Then the concrete glasses would be the phone charger, the tablet charger, and the watch charger, which can then charge all of these devices in the U.S.
 
-    This is the difference between intrinsic and extrinsic states. The character code is intrinsic because it's the same
-    for every letter A, for example, but the position on the document is extrinsic, because it will be different for everyone.
+    Say someone else has written some code for charging phones in Europe, but their code doesn't know about our charger interface.
+    So I can't use charger objects and the European phone charger interchangeably. Using the adapter pattern, I can create an adapter
+    object that inherits from the charger interface, but contains the implementation of a European phone charger.
 
-    Flyweight objects allow you to share the intrinsic states, so the stuff is the same for every object. Information about
-    the extrinsic states can be passed to the Flyweight objects when it needs it. The Flyweights objects can't make any assumptions
-    about the external states, but apart from that, it should behave in the same way as an object that's not shared, You should be
-    able to use it in multiple places at the same time as though they were separate objects.*/
+    Another option would be to change the source code of the class that you're trying to use, but this isn't always possible.
+    It might be third party code that you don't have access to. And even if you did have access to the third party code, you
+    shouldn't have to hack it just to make one application work. The code might be our own code, but it might be legacy codes
+    that you need to reuse and you've decided that you don't want to change it.
+
+    So you would use the adapter pattern when you want to use an existing class, but it doesn't fit into your class hierarchy.
+
+    There are some examples of this pattern in the JDK itself. For example,
+        - the collections class has two methods lists and enumeration, which use the adapter pattern to provide compatibility with Legacy APIs
+        that work with the enumerations.
+
+        - Another example is the as list method of the arrays class, which uses the adapter pattern to allow array based and collection based APIs to work together.
+*/
 }

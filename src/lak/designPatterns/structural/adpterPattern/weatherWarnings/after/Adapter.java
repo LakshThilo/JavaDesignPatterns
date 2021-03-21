@@ -4,7 +4,6 @@ public class Adapter implements City{
 
     City city;
 
-
     public Adapter(AsianCity city){
         this.city = city;
     }

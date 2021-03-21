@@ -2,7 +2,8 @@ package lak.designPatterns.creational.abstractMethodPattern;
 
 public class Abstract_Method_Pattern {
 
-    /*The Abstract Factory Pattern provides an interface for creating families of objects without specifying what their concrete types are.
+    /** The Abstract Factory Pattern provides an interface for creating families of objects without specifying what their concrete types are.*/
+    /*
     It should be used when there is a system that creates objects, but how those objects are created should be hidden from view. In particular,
     it is used when applications have families of objects. The application should be able to choose which of a selection of families it wants to use.
     The abstract factory pattern can ensure that family groups are used together.

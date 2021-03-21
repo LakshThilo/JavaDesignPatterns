@@ -1,35 +1,29 @@
 package lak.designPatterns.structural.flyweightPattern;
 
 public class Flyweight_Pattern {
-        /*
-         A proxy is used as a source of replacement for a real object. It literally means a substitute for the real thing.
-         In real life, a good example of a proxy is a bank card. Instead of paying with the real money in your accounts,
-         your bank card acts as a proxy and allows you to access. the actual money when you need it.
 
-         In computing, you might've have come across the concept of proxy servers, which is service that sit between the
-         clients and the actual server and pass messages between the two. This is a similar concept to the proxy pattern
-         in Java. There are a few different types of proxy patterns. The one I'm going to be concentrating on in this chapter
-         is virtual proxies. Virtual proxies are used to save memory and improve startup times and applications.
+        /*  Suppose you have hundreds of small objects in your application that use uploads of memory.
+    The Flyweight Pattern uses sharing to make apps like these work more efficiently.
+    Imagine a program that's used for creating and editing text documents. A user opens a document and starts typing on it.
+    In an object-oriented design, you could have a new objects for each character. So every time they typed an A, you would
+    create a new A object. That would be a lot of objects. If they opened up a document that was hundreds of pages long,
+    there might be a million separate letter objects.
 
-         Say, for example, you have an app for displaying documents. There might be a big picture on page 50, say of the
-         document. And when you open the document, you don't really want to load the big picture right away as that might
-         take a long time and use lots of memory. You don't even know if the person using the app is ever going to scroll
-         down to page 50. Instead of creating the big image object straight away, you could create a proxy object for it.
+    This situation might lead to the dreaded java.lang.OutOfMemory error. That's all Java developers are familiar with.
+    Also in Java, it doesn't take long to create objects. In fact, it's actually pretty quick, but there is definitely an
+    opportunity here to maximize performance.
 
-         Proxy objects differentiate between expensive operations and inexpensive operations. The image objects might have
-         inexpensive methods like getWidth() and getHeight() and you might want to access this information before we actually
-         draw it. Other things like loadImageFromDisk are expensive and we don't want to call them until we really need to.
+    This is where the Flyweight Pattern can help. Instead of having a separate object for A, B, C, D, E, and so on, you
+    could have one share object for all the A's and one for all the B's, and so on. This is okay because all A's look the same.
+    They have the same character code and shape and so on, but they won't all have the same position on the documents.
+    That will be different for each one.
 
-         This is where the proxy pattern comes in to help. It only calls the expensive method when needed, this is a technique
-         known as lazy loading. So the proxy pattern is used when he wants to replace an actual objects with something more versatile.
-         It's sometime used in graphical user interfaces where you want to put offloading expensive objects. Another common
-         use is for database connections, where your app has an expensive call to a database. And you only want to do that when
-         you need to actually interact with the database, rather than its start up time. Other types of proxy, such as
-         protection proxies, are used to restrict access rights. There might be a few parts of an application that needs to
-         be verified with authentication credentials.
+    This is the difference between intrinsic and extrinsic states. The character code is intrinsic because it's the same
+    for every letter A, for example, but the position on the document is extrinsic, because it will be different for everyone.
 
-         A proxy can be used for that authentication and only allow access to the real object if the client
-         provides the correct details.
-        */
+    Flyweight objects allow you to share the intrinsic states, so the stuff is the same for every object. Information about
+    the extrinsic states can be passed to the Flyweight objects when it needs it. The Flyweights objects can't make any assumptions
+    about the external states, but apart from that, it should behave in the same way as an object that's not shared, You should be
+    able to use it in multiple places at the same time as though they were separate objects.*/
 
 }

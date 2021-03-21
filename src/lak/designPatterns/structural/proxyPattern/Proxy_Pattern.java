@@ -2,33 +2,34 @@ package lak.designPatterns.structural.proxyPattern;
 
 public class Proxy_Pattern {
 
-/*
-    What if you want to use a class that belongs to a third party app, but it doesn't fit with your app because of incompatible interfaces.
-    The adapter pattern provides a way for classes to work together that normally wouldn't be able to.
+        /*
+         A proxy is used as a source of replacement for a real object. It literally means a substitute for the real thing.
+         In real life, a good example of a proxy is a bank card. Instead of paying with the real money in your accounts,
+         your bank card acts as a proxy and allows you to access. the actual money when you need it.
 
-    So imagine you have a plug, that you can use to plug in different USB cables. So you can use the plug to charge a range of different
-    devices like your phone, and your tablets, and your fitness watch. But when you go abroad, the plug doesn't fit in the socket and you
-    can't use it to charge anything. So instead you can use a plug adapter and the adapter allows you to charge all of your devices abroad.
+         In computing, you might've have come across the concept of proxy servers, which is service that sit between the
+         clients and the actual server and pass messages between the two. This is a similar concept to the proxy pattern
+         in Java. There are a few different types of proxy patterns. The one I'm going to be concentrating on in this chapter
+         is virtual proxies. Virtual proxies are used to save memory and improve startup times and applications.
 
-    If this real world example was written in Java code,
-        -the charge would be an interface.
-        - Then the concrete glasses would be the phone charger, the tablet charger, and the watch charger, which can then charge all of these devices in the U.S.
+         Say, for example, you have an app for displaying documents. There might be a big picture on page 50, say of the
+         document. And when you open the document, you don't really want to load the big picture right away as that might
+         take a long time and use lots of memory. You don't even know if the person using the app is ever going to scroll
+         down to page 50. Instead of creating the big image object straight away, you could create a proxy object for it.
 
-    Say someone else has written some code for charging phones in Europe, but their code doesn't know about our charger interface.
-    So I can't use charger objects and the European phone charger interchangeably. Using the adapter pattern, I can create an adapter
-    object that inherits from the charger interface, but contains the implementation of a European phone charger.
+         Proxy objects differentiate between expensive operations and inexpensive operations. The image objects might have
+         inexpensive methods like getWidth() and getHeight() and you might want to access this information before we actually
+         draw it. Other things like loadImageFromDisk are expensive and we don't want to call them until we really need to.
 
-    Another option would be to change the source code of the class that you're trying to use, but this isn't always possible.
-    It might be third party code that you don't have access to. And even if you did have access to the third party code, you
-    shouldn't have to hack it just to make one application work. The code might be our own code, but it might be legacy codes
-    that you need to reuse and you've decided that you don't want to change it.
+         This is where the proxy pattern comes in to help. It only calls the expensive method when needed, this is a technique
+         known as lazy loading. So the proxy pattern is used when he wants to replace an actual objects with something more versatile.
+         It's sometime used in graphical user interfaces where you want to put offloading expensive objects. Another common
+         use is for database connections, where your app has an expensive call to a database. And you only want to do that when
+         you need to actually interact with the database, rather than its start up time. Other types of proxy, such as
+         protection proxies, are used to restrict access rights. There might be a few parts of an application that needs to
+         be verified with authentication credentials.
 
-    So you would use the adapter pattern when you want to use an existing class, but it doesn't fit into your class hierarchy.
-
-    There are some examples of this pattern in the JDK itself. For example,
-        - the collections class has two methods lists and enumeration, which use the adapter pattern to provide compatibility with Legacy APIs
-        that work with the enumerations.
-
-        - Another example is the as list method of the arrays class, which uses the adapter pattern to allow array based and collection based APIs to work together.
-*/
+         A proxy can be used for that authentication and only allow access to the real object if the client
+         provides the correct details.
+        */
 }

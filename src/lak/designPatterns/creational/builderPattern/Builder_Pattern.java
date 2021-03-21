@@ -2,6 +2,7 @@ package lak.designPatterns.creational.builderPattern;
 
 public class Builder_Pattern {
 
+    /** The main purpose of the builder pattern is to avoid having complex constructors.*/
     /*
         The main purpose of the builder pattern is to avoid having complex constructors. In general, you should avoid having
         a constructor that takes a large number of parameters. Long lists of parameters are confusing and do not give you much
@@ -17,7 +18,7 @@ public class Builder_Pattern {
 
         One way to fix this problem is to have multiple constructors. They could be one that takes all the parameters and another
         that takes just the name. Then if one was needed there could be another constructor that takes just the first two parameters, name and age.
-    Then there could be one that takes the first three and then the first four and so on until all the parameters are added.
+        Then there could be one that takes the first three and then the first four and so on until all the parameters are added.
         This technique is called the telescoping constructor pattern. The problem with this technique is the class ends up having a
         very large number of constructors. There may be times when you want to specify other combinations, for example, just nationality
         and date of birth. To have a constructor for every possible combination of eight parameters there would be 254 different constructors.
